@@ -6,7 +6,7 @@ urlpatterns = [
     path("users/", views.UserViewSet.as_view(), name="user-list"),
     path("users/<int:pk>/", views.UserDetailViewSet.as_view(), name="user-detail"),
     path("", views.api_root),
-    path("users/<int:pk>/", views.UserDetailViewSet.as_view(), name="user-detail"),
+    
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
