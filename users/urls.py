@@ -4,9 +4,8 @@ from users import views
 
 urlpatterns = [
     path("users/", views.UserViewSet.as_view(), name="user-list"),
-    path("users/<int:pk>/", views.UserDetailViewSet.as_view(), name="user-detail"),
+    path("user/<int:pk>/", views.UserDetailViewSet.as_view(), name="user-detail"),
     path("", views.api_root),
-    
 ]
 
 urlpatterns = format_suffix_patterns(urlpatterns)
