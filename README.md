@@ -11,16 +11,18 @@ This is a project for managing users.
 3. Activate the virtual environment: `source .venv/bin/activate`
 4. Install the dependencies: `pip install -r requirements.txt`
 5. Create the initial migration files: `python manage.py makemigrations users`
-6. Run the migrations: `python manage.py migrate`
-7. Create a superuser with the following info username is admin, email is admin@email.com and password is adminpass123: `python manage.py createsuperuser`
-8. Create a testuser with the following username is testuser, email is testuser@email.com and password is testuserpass123: `python manage.py createsuperuser`
-9. Start the development server: `python manage.py runserver`
+6. Create the initial migration files: `python manage.py makemigrations person`
+7. Run the migrations: `python manage.py migrate`
+8. Create a superuser with the following info username is admin, email is admin@email.com and password is adminpass123: `python manage.py createsuperuser`
+9. Create a testuser with the following username is testuser, email is testuser@email.com and password is testuserpass123: `python manage.py createsuperuser`
+10. Start the development server: `python manage.py runserver`
 
 ## Usage
 
 The API has the following endpoints:
 
 - `http://127.0.0.1:8000/users/`: Endpoint 1 Users
+- `http://127.0.0.1:8000/persons/`: Endpoint 1 Users
 
 To access the endpoints, send HTTP requests to the corresponding URLs using a tool like `curl` or a REST client like Postman.
 
