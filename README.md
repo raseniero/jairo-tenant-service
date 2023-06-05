@@ -7,7 +7,7 @@ This is a project for managing users.
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/raseniero/jairo-user-manager.git`
-2. Create a virtual environment: `python3 -m venv env`
+2. Create a virtual environment: `python3 -m venv venv`
 3. Activate the virtual environment: `source env/bin/activate`
 4. Install the dependencies: `pip install -r requirements.txt`
 5. Create the initial migration files: `python manage.py makemigrations user`
