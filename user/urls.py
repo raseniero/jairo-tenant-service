@@ -1,6 +1,6 @@
 from django.urls import path
 from rest_framework.urlpatterns import format_suffix_patterns
-from users import views
+from user import views
 
 urlpatterns = [
     path("users/", views.UserViewSet.as_view(), name="user-list"),
