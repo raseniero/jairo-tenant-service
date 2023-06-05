@@ -7,14 +7,14 @@ This is a project for managing users.
 ## Installation
 
 1. Clone the repository: `git clone https://github.com/raseniero/jairo-user-manager.git`
-2. Create a virtual environment: `python3 -m venv .venv`
-3. Activate the virtual environment: `source .venv/bin/activate`
+2. Create a virtual environment: `python3 -m venv env`
+3. Activate the virtual environment: `source env/bin/activate`
 4. Install the dependencies: `pip install -r requirements.txt`
-5. Create the initial migration files: `python manage.py makemigrations users`
+5. Create the initial migration files: `python manage.py makemigrations user`
 6. Create the initial migration files: `python manage.py makemigrations person`
 7. Run the migrations: `python manage.py migrate`
 8. Create a superuser with the following info username is admin, email is admin@email.com and password is adminpass123: `python manage.py createsuperuser`
-9. Create a testuser with the following username is testuser, email is testuser@email.com and password is testuserpass123: `python manage.py createsuperuser`
+9. Create a user with the following username is user, email is user@email.com and password is userpass123: `python manage.py createsuperuser`
 10. Start the development server: `python manage.py runserver`
 
 ## Usage
