@@ -69,4 +69,3 @@ jobs:
           app-name: "jairoapi"
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_DCAA48C2CDE04059A7352CD6B109967D }}
-          images: my-image:latest
