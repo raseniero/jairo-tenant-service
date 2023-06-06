@@ -9,5 +9,8 @@ def api_root(request, format=None):
         {
             "users": reverse("user-list", request=request, format=format),
             "persons": reverse("person-list", request=request, format=format),
+            "organizations": reverse(
+                "organization-list", request=request, format=format
+            ),
         }
     )
