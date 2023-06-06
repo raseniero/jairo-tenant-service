@@ -8,7 +8,7 @@ class Organization(models.Model):
     subdomain = models.CharField(max_length=100, unique=True)
     created_at = models.DateTimeField(auto_now_add=True)
     updated_at = models.DateTimeField(auto_now=True)
-    url = models.URLField(max_length=200, blank=True, null=True)
+    website = models.URLField(max_length=200, blank=True, null=True)
     telephone = models.CharField(max_length=20, blank=True, null=True)
     tax_id = models.CharField(max_length=20, blank=True, null=True)
     logo = models.ImageField(upload_to="logos/", blank=True, null=True)
