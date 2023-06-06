@@ -17,11 +17,11 @@ def api_root(request, format=None):
     )
 
 
-class UserViewSet(generics.ListCreateAPIView):
+class UserListCreate(generics.ListCreateAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
 
 
-class UserDetailViewSet(generics.RetrieveUpdateDestroyAPIView):
+class UserRetriveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
     queryset = User.objects.all()
     serializer_class = UserSerializer
