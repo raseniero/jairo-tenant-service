@@ -1,6 +1,6 @@
 GitHub Copilot: Here's a sample Django Rest Framework README file:
 
-# Project Name
+# Project Nam
 
 This is a project for managing users.
 
