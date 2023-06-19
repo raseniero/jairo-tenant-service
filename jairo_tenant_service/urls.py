@@ -27,4 +27,5 @@ urlpatterns = [
     path("", include("user.urls")),
     path("", include("person.urls")),  # new
     path("", include("softwareApplication.urls")),  # new
+    path("", include("applicationSettings.urls")),  # new
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
