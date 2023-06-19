@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     "user",  # new
     "person",  # new
     "organization",  # new
+    "softwareApplication",  # new
 ]
 
 MIDDLEWARE = [
