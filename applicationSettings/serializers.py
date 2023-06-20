@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from .models import Application
+from .models import ApplicationSettings
 
 
 class ApplicationSettingsSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Application
+        model = ApplicationSettings
         fields = (
             "guid",
             "key",

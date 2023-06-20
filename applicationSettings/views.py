@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from rest_framework import generics
-from .models import Application
+from .models import ApplicationSettings
 from .serializers import ApplicationSettingsSerializer
 from rest_framework.decorators import api_view
 from rest_framework.response import Response
@@ -18,10 +18,10 @@ def api_root(request, format=None):
 
 
 class ApplicationSettingsListCreate(generics.ListCreateAPIView):
-    queryset = Application.objects.all()
+    queryset = ApplicationSettings.objects.all()
     serializer_class = ApplicationSettingsSerializer
 
 
 class ApplicationSettingsRetriveUpdateDestroy(generics.RetrieveUpdateDestroyAPIView):
-    queryset = Application.objects.all()
+    queryset = ApplicationSettings.objects.all()
     serializer_class = ApplicationSettingsSerializer
