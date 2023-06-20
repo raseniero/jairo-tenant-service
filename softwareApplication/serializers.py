@@ -1,10 +1,10 @@
 from rest_framework import serializers
-from .models import Software
+from .models import SoftwareApplication
 
 
-class SoftwareSerializer(serializers.HyperlinkedModelSerializer):
+class SoftwareApplicationSerializer(serializers.HyperlinkedModelSerializer):
     class Meta:
-        model = Software
+        model = SoftwareApplication
         fields = (
             "guid",            
             "name",
