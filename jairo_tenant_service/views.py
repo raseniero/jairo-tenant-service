@@ -12,7 +12,7 @@ def api_root(request, format=None):
             "organizations": reverse(
                 "organization-list", request=request, format=format
             ),
-             "softwareApplication": reverse("software-list", request=request, format=format),
+             "softwareApplication": reverse("softwareApplication-list", request=request, format=format),
              "appilcationSettings": reverse("applicationSettings-list", request=request, format=format),
         }
     )
