@@ -29,6 +29,7 @@ DEBUG = True
 ALLOWED_HOSTS = [
     "jairo-tenant-service.azurewebsites.net",
     "127.0.0.1",
+    "localhost"
 ]
 
 
@@ -46,6 +47,7 @@ INSTALLED_APPS = [
     "person",  # new
     "organization",  # new
     "softwareApplication",  # new
+    "applicationSettings",  # new
 ]
 
 MIDDLEWARE = [
